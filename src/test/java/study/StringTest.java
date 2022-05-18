@@ -10,4 +10,8 @@ public class StringTest {
         String actual = "abc".replace("b", "d");
         assertThat(actual).isEqualTo("adc");
     }
+    void split_test() {
+        String[] splitString = "1,2".split(",");
+        assertThat(splitString).isEqualTo("");
+    }
 }
